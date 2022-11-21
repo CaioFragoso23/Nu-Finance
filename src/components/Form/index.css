@@ -1,0 +1,44 @@
+
+.form{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 30%;
+    justify-content: center;
+    border: 1px solid var(--color-grey-2);
+}
+
+.button-primary{
+    border-radius: 8px;
+    border: none;
+    padding: 12px;
+    background-color: var(--color-primary);
+    color: var(--color-grey-1);
+    font-family: var(--font-family);
+}
+
+.button-primary:hover{
+    background-color: var(--color-primary-2);
+}
+
+.input-number{
+    padding: 12px;
+    border: none;
+    background-color: var(--color-grey-2);
+    font-family: var(--font-family);
+}
+
+.input-description{
+    padding: 12px;
+    border: none;
+    background-color: var(--color-grey-2);
+    font-family: var(--font-family);
+}
+
+.input-select{
+    padding: 12px;
+    border: none;
+    background-color: var(--color-grey-2);
+    font-family: var(--font-family);
+}
