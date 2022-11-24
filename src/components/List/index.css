@@ -1,0 +1,43 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    list-style-type: none;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+    width: 500px;
+    margin: 5px;
+    height: 52px;
+    list-style-type: none;
+}
+.card:hover{
+    background-color: var(--color-grey-2);
+    transform: 1s;
+}
+
+.button-exclude{
+    border-radius: 8px;
+    border: 1px solid var(--color-grey-4);
+    padding: 12px;
+    font-family: var(--font-family);
+}
+
+.button-exclude:hover{
+    background-color: var(--color-grey-2);
+}
+
+.entryCard{
+    background-color: var(--color-secondary);
+    height: 100%;
+    width: 5px;
+}
+.exitCard{
+    background-color: var(--color-grey-3);
+    height: 100%;
+    width: 5px;
+}

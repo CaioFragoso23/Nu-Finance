@@ -1,8 +1,12 @@
-export const Header = ({Children}) => {
+import "./index.css"
+
+export const Header = ({logout}) => {
     return(
-        <header>
-            <h1><span>Nu</span> Kenzie</h1>
-            {Children}
+        <header className="header">
+            <nav className="nav container">
+                <h1><span>Nu</span> Kenzie</h1>
+                <button className="button-secondary" onClick={logout} >Início</button>
+            </nav>
         </header>
     )
 }

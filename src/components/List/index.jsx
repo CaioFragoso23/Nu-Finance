@@ -1,17 +1,42 @@
-export const List = (listTransactions) => {
+import "./index.css"
+
+export const Card = ({handleTransaction, transaction, index}) => {
+    if(transaction.type === "entrada"){
+
+        return(
+            <li className="card" key={index}>
+                <div className="entryCard"></div>
+               <h1>{transaction.description}</h1>
+               <p>R$:{transaction.value} </p> 
+               <button className="button-exclude" onClick={() => handleTransaction(transaction)}>Excluir</button>
+            </li>
+        )
+    }
+    else if(transaction.type === "saída"){
+        return(
+            <li className="card" key={index}>
+                <div className="exitCard"></div>
+               <h1>{transaction.description}</h1>
+               <p>R$:{transaction.value} </p> 
+               <button className="button-exclude" onClick={() => handleTransaction(transaction)}>Excluir</button>
+            </li>
+        )
+    }
+}
+
+export const List = ({listValue, listTransactions, setListTransactions, setListValue}) => {
+
+    function handleTransaction(finishedTransaction){
+        let remove = listTransactions.filter((transaction) => transaction !== finishedTransaction);
+        setListValue(remove)
+        setListTransactions(remove)
+    }
     return(
-        <ul>
-            {listTransactions.map((transaction, index) => <Card transaction={transaction} key={index} />)}
+        <ul className="list">
+            {listValue.map((transaction, index) => <Card transaction={transaction} handleTransaction={handleTransaction} key={index} />)}
         </ul>
     )
 }
 
 
-export const Card = (transaction, key) => {
-    return(
-        <li>
-            {transaction}
-            {key}
-        </li>
-    )
-}
+

@@ -1,0 +1,10 @@
+.homeContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    gap: 30px;
+    top: 3%;
+    left: 15%;
+}
+

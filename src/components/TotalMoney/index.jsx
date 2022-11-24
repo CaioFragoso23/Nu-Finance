@@ -1,7 +1,7 @@
-// export const TotalMoney = (listTransactions) => {
-//     return(
-//         <>
-//         <p>{listTransactions.reduce((previousValue, currentValue) => previousValue + currentValue.price, 0)} </p>
-//         </>
-//     )
-// }
+export const TotalMoney = ({listTransactions}) => {
+    return(
+        <>
+        <p> Total: {listTransactions.reduce((previousValue, currentValue) => {return previousValue + currentValue.value}, 0)} </p>
+        </>
+    )
+}

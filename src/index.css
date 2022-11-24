@@ -28,7 +28,7 @@
   width: 1200px;
 }
 
-@media(min-width: 400px){
+@media(max-width: 400px){
   .container{
     margin: 0 15px;
   }
