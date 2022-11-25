@@ -1,0 +1,13 @@
+.totalMoney{
+    padding: 8px;
+    width: 100%;
+}
+.value{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.primary{
+    color: var(--color-primary);
+    font-weight: 600;
+}

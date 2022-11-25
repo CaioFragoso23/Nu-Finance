@@ -4,7 +4,7 @@ export const Header = ({logout}) => {
     return(
         <header className="header">
             <nav className="nav container">
-                <h1><span>Nu</span> Kenzie</h1>
+                <h1><span className="nuLogo">Nu</span> Kenzie</h1>
                 <button className="button-secondary" onClick={logout} >Início</button>
             </nav>
         </header>

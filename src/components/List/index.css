@@ -4,21 +4,23 @@
     height: 100%;
     list-style-type: none;
 }
-
+.cardInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
 .card{
     display: flex;
-    justify-content: space-between;
+    background-color: var(--color-grey-2);
     padding: 8px;
     align-items: center;
     width: 500px;
     margin: 5px;
-    height: 52px;
+    height: 64px;
     list-style-type: none;
 }
-.card:hover{
-    background-color: var(--color-grey-2);
-    transform: 1s;
-}
+
 
 .button-exclude{
     border-radius: 8px;
@@ -35,9 +37,11 @@
     background-color: var(--color-secondary);
     height: 100%;
     width: 5px;
+    margin-right: 8px;
 }
 .exitCard{
     background-color: var(--color-grey-3);
     height: 100%;
     width: 5px;
+    margin-right: 8px;
 }
