@@ -9,3 +9,15 @@
     left: 15%;
 }
 
+@media(max-width: 425px){
+    .homeContainer{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 3%;
+    }
+    .img{
+        display: none;
+    }
+}

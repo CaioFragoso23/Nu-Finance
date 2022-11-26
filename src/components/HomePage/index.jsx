@@ -14,7 +14,7 @@ export const HomePage = ({ isLoggedIn, login, logout, children }) => {
             Iniciar.
           </button>
         </div>
-        <img src={Logo} alt="" />
+        <img className="img" src={Logo} alt="" />
       </div>
     );
   } else if (isLoggedIn === true) {

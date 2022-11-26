@@ -1,7 +1,6 @@
 import "./index.css";
 
 export const Card = ({ handleTransaction, transaction, index }) => {
-  console.log(transaction);
   if (transaction.type === "entrada") {
     return (
       <li className="card" key={index}>

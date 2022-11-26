@@ -14,13 +14,13 @@ export const Form = ({listTransactions, setListTransactions, listValue, setListV
         setListTransactions([...listTransactions, transaction])
         setListValue([...listValue, transaction])}} >
             <div className="filler" >
-                <input className="input-description transactionDescription" placeholder="Descrição da transação" value={transaction.description} onChange={(event) => setTransaction({...transaction, description: event.target.value})} type="text"></input>
+                <input className="input-description transactionDescription" placeholder="Descrição da transação" value={transaction.description} onChange={(event) => setTransaction({...transaction, description: event.target.value})} type="text" required ></input>
                 <p className="subtitle">Ex: Compra de roupas</p>
             </div>
             <div className="transactionInfo">
                 <div className="filler" >
                     <p>Valor</p>
-                    <input className="input-number transactionInputs" placeholder="Valor da transação." value={transaction.value} type="number" onChange={(event) => setTransaction({...transaction, value: parseInt(event.target.value)})} />
+                    <input className="input-number transactionInputs" placeholder="Valor da transação." value={transaction.value} type="number" onChange={(event) => setTransaction({...transaction, value: parseInt(event.target.value)})} required />
                 </div>
                 <div className="filler">
                 <p>Tipo de transação</p>

@@ -19,13 +19,30 @@
     top: 0;
     left: 0;
     box-shadow: 0px 6px 10px -1px rgba(0,0,0,0.46);
-    background-color: var(--color-grey-700);
+    background-color: var(--color-grey-1);
     width: 100%;
     border-bottom: 1px solid var(--color-grey-200);
     margin-bottom: 20px;
+    z-index: 2020;
 }
 .nav{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media(max-width: 425px){
+    .header{
+        
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    .nav{
+    
+    }
 }
